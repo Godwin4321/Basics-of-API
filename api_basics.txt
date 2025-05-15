@@ -10,3 +10,36 @@
 | **Performance & Scaling**     | ✔️ You monitor and optimize performance             | ❌ Provider manages performance                     |
 | **API Documentation**         | ✔️ You write and maintain docs (or auto-generate)   | ✔️ Provided by the API owner for developers        |
 | **Modifications & Updates**   | ✔️ You can update the API anytime                   | ❌ Updates depend on the API provider               |
+
+
+
+This is a simple API you created using Flask in Python. It listens for requests at the /temperature endpoint and responds based on the query parameter city.
+
+# weather_api.py (Flask - Python example)
+
+
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/temperature')
+def get_temperature():
+    city = request.args.get('city')
+    if city == "London":
+        return jsonify({"city": city, "temperature": "18°C"})
+    else:
+        return jsonify({"error": "City not found"}), 404
+
+app.run()
+
+What happens in this API?
+
+When someone sends a request like:
+GET /temperature?city=London
+It returns:
+{ "city": "London", "temperature": "18°C" }
+For any other city, it returns a 404 error with:
+{ "error": "City not found" }
+
+
+
