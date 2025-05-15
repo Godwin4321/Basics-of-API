@@ -1,0 +1,12 @@
+| **Aspect**                    | **When You Create Your Own API**                    | **When You Use Someone Else’s API**                |
+| ----------------------------- | --------------------------------------------------- | -------------------------------------------------- |
+| **Source Code**               | ✔️ You have full access to the API’s code and logic | ❌ Usually not accessible (unless open source)      |
+| **Endpoints**                 | ✔️ You define and see all endpoints                 | ✔️ You see available endpoints via documentation   |
+| **Request Handling Logic**    | ✔️ You control and see how requests are processed   | ❌ Hidden inside the provider’s server              |
+| **Response Format**           | ✔️ You design and control response structure        | ✔️ You know response format from API documentation |
+| **Authentication & Security** | ✔️ You configure authentication and security        | ✔️ You follow provider’s authentication methods    |
+| **Error Handling**            | ✔️ You decide error messages and codes              | ✔️ You see errors as documented by the provider    |
+| **Server/Hosting**            | ✔️ You control where and how the API is hosted      | ❌ Managed by the API provider                      |
+| **Performance & Scaling**     | ✔️ You monitor and optimize performance             | ❌ Provider manages performance                     |
+| **API Documentation**         | ✔️ You write and maintain docs (or auto-generate)   | ✔️ Provided by the API owner for developers        |
+| **Modifications & Updates**   | ✔️ You can update the API anytime                   | ❌ Updates depend on the API provider               |
